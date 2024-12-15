@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Beauty for Cosmetics</title>
+    <link rel="stylesheet" href="r.css"> 
+</head>
+<body>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Royal Beauty for Cosmetics</h1>
+            <p>Your Beauty, Our Passion</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Royal Beauty, we believe in providing top-quality skincare, haircare, and cosmetic products. Our mission is to make you feel confident, beautiful, and cared for. You deserve it GIRLL!</p>
+    </section>
+    <nav class="navbar">
+        <h1 class="logo">Royal Beauty</h1>
+        <ul class="nav-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Products...">
+            <button class="cart-btn" onclick="viewCart()">Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </nav>
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card" data-name="Cosmetic Cream">
+                <img src="product1.png" alt="Cosmetic Cream">
+                <h3>Cosmetic Cream</h3>
+                <p>For sensitive skin</p>
+                <p class="price">250 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Cosmetic Cream', 250)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Face Wash">
+                <img src="product2.png" alt="Face Wash">
+                <h3>Face Wash</h3>
+                <p>Gentle cleansing</p>
+                <p class="price">180 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Face Wash', 180)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Moisturizing Lotion">
+                <img src="product3.png" alt="Moisturizing Lotion">
+                <h3>Moisturizing Lotion</h3>
+                <p>Deep hydration</p>
+                <p class="price">220 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Moisturizing Lotion', 220)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Hair Serum">
+                <img src="product4.png" alt="Hair Serum">
+                <h3>Hair Serum</h3>
+                <p>For shiny hair</p>
+                <p class="price">300 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Hair Serum', 300)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Nail Care Set">
+                <img src="product5.png" alt="Nail Care Set">
+                <h3>Nail Care Set</h3>
+                <p>For strong nails</p>
+                <p class="price">150 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Nail Care Set', 150)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Makeup Kit">
+                <img src="product6.png" alt="Makeup Kit">
+                <h3>Makeup Kit</h3>
+                <p>Complete essentials</p>
+                <p class="price">400 EGP</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Makeup Kit', 400)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>Thank you for choosing our products. All rights reserved.</p>
+    </footer>
+
+    <script src="r.js"></script> 
+    
+</body>
+</html>
